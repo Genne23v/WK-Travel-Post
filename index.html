@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+    <title>Wonkeun's Website</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="main">
+        <div class="navbar-brand">
+            <img src="images/WK_logo@2x.png">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>ARTICLES</li>
+                <li>SHOP</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <!-- <img src="images/main-intro.jpg" style="height:100vh;"> -->
+        <div class="container-sm" id="intro">
+            <h1>Explore the World<br>Journey starts here... </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, doloribus cupiditate ad, nostrum asperiores quasi nam minus aspernatur, vel voluptates aperiam nemo ratione tenetur dolorum libero. Libero beatae quam aspernatur sit alias
+                illum laborum possi</p>
+        </div>
+        <a id="arrow-btn" href="#trip-by-region"><img src="images/arrow@2x.png"></a>
+        <div id="deco-border"></div>
+
+
+
+        <div id="overlap">
+            <img src="images/overlap.png">
+
+        </div>
+    </div>
+    <div id="interface">
+
+    </div>
+    <div id="trip-by-region">
+        <div id="north-america" class="region">
+            <a href="#"><img src="./images/page2-destination/01_NA/BG@2x.png">
+                <h2 class="region-title">North America</h2>
+            </a>
+        </div>
+        <div id="europe" class="region">
+            <a href="#"><img src="./images/page2-destination/02_EUROPE/BG-europe@2x.png">
+                <h2 class="region-title">Europe</h2>
+            </a>
+        </div>
+        <div id="asia" class="region">
+            <a href="#"><img src="./images/page2-destination/03_ASIA/BG-asia@2x.png">
+                <h2 class="region-title">Asia</h2>
+            </a>
+        </div>
+        <div id="oceania" class="region">
+            <a href="#"><img src="./images/page2-destination/04_OCEANIA/BG-oceania@2x.png">
+                <h2 class="region-title">Oceania</h2>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        $(window).scroll(function() {
+
+            let scroll = $(window).scrollTop();
+            $('#overlap').css({
+                filter: `opacity(${scroll/9}%)`
+            })
+        })
+
+        // var controller = new ScrollMagic.Controller();
+        // // create a scene
+        // new ScrollMagic.Scene({
+        //         duration: 100, // the scene should last for a scroll distance of 100px
+        //         offset: 50 // start this scene after scrolling for 50px
+        //     })
+        //     .setPin('#') // pins the element for the the scene's duration
+        //     .addTo(controller); // assign the scene to the controller
+    </script>
+</body>
+
+</html>

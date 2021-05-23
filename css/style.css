@@ -1,0 +1,162 @@
+/* @font-face {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima'), url('OPTIMA.woff') format('woff');
+}
+@font-face {
+    font-family: 'Optima Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Italic'), url('Optima_Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Optima Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Medium'), url('Optima Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Optima Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Optima';
+}
+
+#main {
+    background-image: url('../images/main-intro.jpg');
+    background-size: cover;
+    height: 100vh;
+    z-index: 3;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 62px;
+    top: 37px;
+}
+
+.navbar {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    font-size: 15p;
+    font-family: Libby;
+    color: #685d54;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    margin: 1rem;
+    list-style-type: none;
+}
+
+#intro {
+    position: absolute;
+    width: 55%;
+    left: 80px;
+    bottom: 80px;
+    margin: 0rem;
+    border: 2px solid white;
+    border-image: linear-gradient(45deg, white, transparent 20%)1;
+}
+
+#intro h1 {
+    font-family: 'Optima';
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: white;
+    padding: 20px 50px;
+    margin: 0;
+}
+
+#intro p {
+    font-family: Helvetica;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+#deco-border {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    width: 55%;
+    height: 79px;
+    border: 2px solid white;
+    border-image: linear-gradient(205deg, white, transparent 30%)1;
+    /* border-image: linear-gradient(270deg, white, transparent 30%) no-repeat border-box, linear-gradient(180deg, white, transparent 10%) no-repeat border-box; */
+    border-bottom: 0;
+}
+
+#overlap {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+#interface {
+    height: 620px;
+    width: 100vw;
+    background-image: url('/images/interface.png');
+    background-size: cover;
+    position: absolute;
+    bottom: -350px;
+    z-index: 1;
+}
+
+#arrow-btn {
+    position: absolute;
+    float: center;
+    margin: 0 auto;
+    bottom: 45px;
+    z-index: 5;
+    border: 1px solid red;
+}
+
+#trip-by-region {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 80px;
+    z-index: 333;
+}
+
+.region {
+    flex: 1;
+}
+
+.region h2 {
+    color: white;
+    font-weight: 100;
+    position: relative;
+    bottom: 79px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.region a:link {
+    text-decoration: none;
+}

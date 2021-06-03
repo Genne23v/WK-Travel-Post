@@ -9,6 +9,7 @@
   "author": "Wonkeun No",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "express": "^4.17.1",
     "owl.carousel": "^2.3.4"
   }

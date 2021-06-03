@@ -1,10 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Optima';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #main {
@@ -108,7 +106,6 @@ body {
     left: 49%;
     bottom: 45px;
     z-index: 9;
-    border: 1px solid red;
 }
 
 
@@ -309,9 +306,13 @@ body {
     left: -60px;
 }
 
-.item img {
-    width: 100px;
-    height: 80%;
+.item figure figcaption {
+    position: absolute;
+    top: 30rem;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    left: 12rem;
 }
 
 .reflect {
@@ -332,12 +333,182 @@ body {
 
 #about {
     height: 100vh;
+    color: white;
 }
+
+#about-bg {
+    background-image: url("/images/page-4/Group 115@2x.png");
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+
+#about-header {
+    padding: 20rem 2rem;
+    width: 45%;
+    margin-left: 10rem;
+}
+
+#about-header h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+#about-header p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+}
+
+#about-header h2 {
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+#my-intro {
+    position: absolute;
+    transform: translateY(-790px);
+    right: 1.5rem;
+    width: 32%;
+    transition: transform 1s ease 0s;
+    border: 2px solid black;
+    border-image: linear-gradient(160deg, black, transparent 15%)1;
+    padding: 2rem;
+}
+
+
+/* ---------------------------------------------- */
 
 #travel-with-kids {
     height: 100vh;
 }
 
+#kid-travel-deco {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    left: 10%;
+}
+
+#travel-header {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 2px solid black;
+    border-image: linear-gradient(160deg, black, transparent 15%)1; */
+}
+
+#travel-header h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+#travel-header p {
+    font-size: 1.2rem;
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+
+#travel-header a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: dimgray;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid dimgray;
+}
+
+#travel-photos {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#travel-photos .owl-item {
+    /* width: 428px !important; */
+}
+
+#travel-photos .owl-item img {
+    height: 100%;
+    width: auto;
+}
+
+#travel-photos .owl-nav .owl-prev {
+    left: 5% !important;
+    color: dimgray;
+}
+
+#travel-photos .owl-nav .owl-next {
+    right: 5% !important;
+    color: dimgray;
+}
+
+
+/* ---------------------------------------------- */
+
 #contact {
-    height: 100vh;
+    height: 130vh;
+    width: 100%;
+    background-image: url('/images/page-6/background@2x@2x.png');
+    background-size: cover;
+    background-position: center bottom;
+    text-align: center;
+}
+
+#contact-deco {
+    padding-top: 230px;
+}
+
+#contact-header {
+    position: relative;
+    bottom: 40%;
+    width: 45%;
+    margin: 0 auto;
+    color: white;
+}
+
+#contact-header h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+#contact-header p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#social-media * {
+    color: white;
+    margin: 3rem 2rem;
+}
+
+#bottom-menu {
+    position: relative;
+    bottom: 300px;
+}
+
+#bottom-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bottom-menu li {
+    margin: 1rem;
+}
+
+#bottom-menu * {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Libby;
+    list-style-type: none;
+}
+
+#social-media a:hover .fa-2x {
+    transform: scale(1.2);
+    transition: all 1s ease;
 }

@@ -15,6 +15,10 @@
 
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
 
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
     <title>Wonkeun's Website</title>
 </head>
 
@@ -125,10 +129,18 @@
             </div>
         </div>
         <div id="right-container" class="owl-carousel owl-theme">
-            <div class="item" data-hash="one"> <img src="images/page-3/01_Motorcycle Trip/bike photo@2x.png">
-                <div class="reflect"></div>
-            </div>
+            <div class="item" data-hash="one">
+                <figure>
+                    <img src="images/page-3/01_Motorcycle Trip/bike photo@2x.png">
+                    <figcaption>
+                        <h1>NZ Bike Tour</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </figcaption>
+                </figure>
+                <div class="reflect">
+                </div>
 
+            </div>
             <div class="item" data-hash="two"> <img src="images/page-3/02_Camping Car/Group 108@2x.png"> </div>
             <div class="item" data-hash="three"> <img src="images/page-3/03_Tracking/Group 106@2x.png"> </div>
             <div class="item" data-hash="four"> <img src="images/page-3/04_Festival/Group 106@2x.png"> </div>
@@ -137,25 +149,64 @@
     </div>
 
     <div id="about">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consequatur quod voluptatem aspernatur iure cum asperiores et excepturi accusamus, officia minus. Reiciendis eius, cupiditate suscipit possimus quos quasi quam modi.</p>
+        <div id="about-bg">
+            <div id="about-header">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consequatur quod voluptatem aspernatur iure cum asperiores et excepturi accusamus, officia minus. Reiciendis eius, cupiditate suscipit possimus quos quasi quam modi.</p>
+                <h2>14 PDF 365</h2>
+            </div>
+        </div>
+        <img id="my-intro" src="images/page-4/Mask Group 3@2x.png">
     </div>
     <div id="travel-with-kids">
-        <h1>Travel With Kids</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, molestias. Ab repudiandae iste aperiam blanditiis in aliquid dicta amet placeat!</p>
-        <a href="#">Find More</a>
+
+        <img id="kid-travel-deco" src="images/page-5/line@2x.png">
+
+        <div id="travel-header">
+            <h1>Travel With Kids</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, molestias. Ab repudiandae iste aperiam blanditiis in aliquid dicta amet adipisicing elit. Esse, molestias. Ab repudiandae iste aperiam blanditiis in aliquid dicta ametplaceat!</p>
+            <a href="#">FIND MORE</a>
+        </div>
+        <div id="travel-photos" class="owl-carousel owl-theme ">
+            <div class="item"><img src="/images/page-5/photo-1@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-2@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-3@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-4@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-5@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-6@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-7@2x.png"></div>
+            <div class="item"><img src="/images/page-5/photo-8@2x.png"></div>
+        </div>
+        <!-- <i class="fas fa-caret-left"></i>
+        <i class="fas fa-caret-right"></i> -->
     </div>
 
     <div id="contact">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta eos ab eaque. Eum aliquam omnis qui corporis odit. Cumque.</p>
-        <div id="social-media">
-
+        <div id="contact-deco">
+            <img src="images/page-6/line@2x.png">
         </div>
-        <div id="bottom-menu">
+        <div id="contact-header">
+            <h1>Contact</h1>
+            <p>I would love to share traveller's story around the world.<br/> Feel free to get in touch for more travel information.
+            </p>
+            <div id="social-media">
+                <a href="#"><i class="fab fa-2x fa-facebook"></i></a>
+                <a href="#"><i class="fas fa-2x fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+            </div>
+        </div>
 
+        <div id="bottom-menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
     </div>
+
 
 
 
@@ -191,13 +242,14 @@
         });
 
         $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
+            $('#right-container').owlCarousel({
                 // animateOut: 'fadeOut',
                 // animateIn: 'flipInX',
                 nav: false,
                 dots: false,
                 items: 1,
-                margin: 10,
+                margin: 15,
+                height: 400,
                 left: true,
                 stagePadding: 60,
                 URLhashListener: true,
@@ -214,6 +266,20 @@
             //     console.log($(this).index())
             //     $('.owl-dots').trigger('to.owl.carousel', [$(this).index(), 300]);
             // });
+
+            $('#travel-photos').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                stagePadding: 0,
+                items: 5,
+                navText: ["<i class='fas fa-caret-left'></i>",
+                    "<i class='fas fa-caret-right'></i>"
+                ]
+            });
+
+
         });
 
         // var controller = new ScrollMagic.Controller();

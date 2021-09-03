@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
-
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
 
@@ -19,10 +16,10 @@
     <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
 
-    <title>Wonkeun's Website</title>
+    <title>WK Travel Post</title>
 </head>
 
-<body>
+<body data-hijacking="off" data-animation="parallax">
     <div class="container-fluid" id="main">
         <div class="navbar-brand">
             <img src="images/WK_logo@2x.png">
@@ -36,16 +33,14 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
-        <!-- <img src="images/main-intro.jpg" style="height:100vh;"> -->
+
         <div class="container-sm" id="intro">
             <h1>Explore the World<br>Journey starts here... </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, doloribus cupiditate ad, nostrum asperiores quasi nam minus aspernatur, vel voluptates aperiam nemo ratione tenetur dolorum libero. Libero beatae quam aspernatur sit alias
-                illum laborum possi</p>
+            <p>Meet the world with curiosity. It continuously motivates me to pursue learn something new. Sometimes it's hard to travel in a strange place and isn't always amusing. But I can't get rid of that feeling of accomplishment and special memories
+                that I will have forever.</p>
         </div>
         <a id="arrow-btn" href="#trip-by-region"><img src="images/arrow@2x.png"></a>
         <div id="deco-border"></div>
-
-
 
         <div id="overlap">
             <img src="images/overlap.png">
@@ -57,75 +52,84 @@
     </div>
     <div id="trip-by-region">
 
-
-        <div id="north-america" class="region-container" style="background-image: url(./images/page2-destination/01_NA/Group\ 117@2x.png);">
-            <!-- <img class="region-img" src="images/page2-destination/01_NA/Group 117@2x.png"> -->
+        <div id="north-america" class="region-container">
             <a class="region-link" href="#">
+                <div class="region-bg" style="background-image: url(./images/page2-destination/01_NA/BG@2x.png);"></div>
+                <div class="region-overlay" style="background-image: url(./images/page2-destination/01_NA/gradation\ shade-na@2x.png); position:absolute; top:0;"></div>
                 <h2 class="region-title">North America</h2>
                 <div class="region-header">
-                    <div class="region-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis in incidunt nam quaerat?</div>
-                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png">
+                    <div class="region-summary">Magnificient & untouched nature and modern cities with multi culture and various people. </div>
+                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png" width="60" height="60">
                 </div>
             </a>
-            <div class="region-overlay"></div>
         </div>
 
-        <div id="europe" class="region-container" style="background-image: url(./images/page2-destination/02_EUROPE/Group\ 118@2x.png);">
+        <div id="europe" class="region-container">
             <a class="region-link" href="#">
+                <div class="region-bg" style="background-image: url(./images/page2-destination/02_EUROPE/BG-europe@2x.png);"></div>
+                <div class="region-overlay" style="background-image: url(./images/page2-destination/02_EUROPE/base\ shadow-europe@2x.png); position:absolute; top:0"></div>
                 <h2 class="region-title">Europe</h2>
                 <div class="region-header">
-                    <div class="region-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis in incidunt nam quaerat?</div>
-                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png">
+                    <div class="region-summary">Various countries with rich history and buildings that make you feel you are in ancient times.</div>
+                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png" width="60" height="60">
                 </div>
             </a>
-            <div class="region-overlay"></div>
-            <!-- <div class="region-overlay" style="background-image: url(images/page2-destination/02_EUROPE/europe-shadow-brown@2x.png);"></div> -->
-        </div>
-        <div id="asia" class="region-container" style="background-image: url(./images/page2-destination/03_ASIA/Group\ 119@2x.png);">
-            <a class="region-link" href="#">
-                <h2 class="region-title">Asia</h2>
-                <div class="region-header">
-                    <div class="region-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis in incidunt nam quaerat?</div>
-                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png">
-                </div>
-            </a>
-            <div class="region-overlay"></div>
-            <!-- <div class="region-overlay" style="background-image: url(images/page2-destination/03_ASIA/overay\ shadow@2x.png);"></div> -->
-        </div>
-        <div id="oceania" class="region-container" style="background-image: url(./images/page2-destination/04_OCEANIA/Group\ 120@2x.png);">
-            <a class="region-link" href="#">
-                <h2 class="region-title">Oceania</h2>
-                <div class="region-header">
-                    <div class="region-summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis in incidunt nam quaerat?</div>
-                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png">
-                </div>
-            </a>
-            <div class="region-overlay"></div>
-            <!-- <div class="region-overlay" style="background-image: url(images/page2-destination/04_OCEANIA/overay-shadow@2x.png);"></div> -->
         </div>
 
+        <div id="asia" class="region-container">
+            <a class="region-link" href="#">
+                <div class="region-bg" style="background-image: url(./images/page2-destination/03_ASIA/BG-asia@2x.png);"></div>
+                <div class="region-overlay" style="background-image: url(./images/page2-destination/03_ASIA/base\ shadow-asia@2x.png); position:absolute; top:0"></div>
+                <h2 class="region-title">Asia</h2>
+                <div class="region-header">
+                    <div class="region-summary">Dynamic modern cultures mixed with Asian religions and exotic architecture.</div>
+                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png" width="60" height="60">
+                </div>
+            </a>
+        </div>
+
+        <div id="oceania" class="region-container">
+            <a class="region-link" href="#">
+                <div class="region-bg" style="background-image: url(./images/page2-destination/04_OCEANIA/BG-oceania@2x.png);"></div>
+                <div class="region-overlay" style="background-image: url('./images/page2-destination/04_OCEANIA/base\ shadow@2x.png'); position:absolute; top:0"></div>
+                <h2 class="region-title">Oceania</h2>
+                <div class="region-header">
+                    <div class="region-summary">Unique Southern hemisphere nature with modern cities. Lots of oceans and deserts.</div>
+                    <img class="region-arrow" src="images/page2-destination/arrow@2x.png" width="60" height="60">
+                </div>
+            </a>
+        </div>
     </div>
 
     <div id="best-experience">
         <div id="left-container">
             <div id="exp-header">
                 <h1>Remarkable Experiences</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolorem minima voluptates sed, eaque omnis reiciendis neque, nisi rem velit explicabo assumenda deserunt quae possimus in fuga consequatur nihil voluptatum vel culpa quibusdam?
-                    dicta consequatur.</p>
+                <p>Travel doesn't need to be extraordinary all the time. But, we can only experience something unique in that special place. It could be atmosphere, people, nature. I can't stop travelling because of that special memories that I will remember
+                    forever.
+                </p>
             </div>
             <div id="exp-nav">
                 <div class="owl-nav">
-                    <button type="button" class="owl-prev"><img src="./images/page-3/arrow-return@2x@2x.png"></button>
-                    <button type="button" class="owl-next"><img src="./images/page-3/arrow@2x.png"></button>
+                    <button type="button" role="presentation" class="owl-prev">
+                        <span class="material-icons md-48">
+                            chevron_left
+                            </span>
+                    </button>
+                    <button type="button" role="presentation" class="owl-next">
+                        <span class="material-icons md-48">
+                            chevron_right
+                            </span>
+                    </button>
                 </div>
                 <div class="owl-dots">
-                    <a href="#one"><button role="button" class="owl-dot"><span></span></button></a>
+                    <a href="#one"><button role="button" class="owl-dot active"><span></span></button></a>
                     <a href="#two"><button role="button" class="owl-dot"><span></span></button></a>
                     <a href="#three"><button role="button" class="owl-dot"><span></span></button></a>
                     <a href="#four"><button role="button" class="owl-dot"><span></span></button></a>
                     <a href="#five"><button role="button" class="owl-dot"><span></span></button></a>
                 </div>
-                <div id="page-num"><span>01</span></div>
+                <div id="page-num"><span id="pg-num">01</span></div>
             </div>
         </div>
         <div id="right-container" class="owl-carousel owl-theme">
@@ -133,18 +137,49 @@
                 <figure>
                     <img src="images/page-3/01_Motorcycle Trip/bike photo@2x.png">
                     <figcaption>
-                        <h1>NZ Bike Tour</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <h1 style="font-weight: 400;">NZ Bike Tour</h1>
+                        <p>Motor bike ride with one of the best friend</p>
                     </figcaption>
                 </figure>
-                <div class="reflect">
-                </div>
-
             </div>
-            <div class="item" data-hash="two"> <img src="images/page-3/02_Camping Car/Group 108@2x.png"> </div>
-            <div class="item" data-hash="three"> <img src="images/page-3/03_Tracking/Group 106@2x.png"> </div>
-            <div class="item" data-hash="four"> <img src="images/page-3/04_Festival/Group 106@2x.png"> </div>
-            <div class="item" data-hash="five"> <img src="images/page-3/05_Relaxing/Group 115@2x.png"> </div>
+
+            <div class="item" data-hash="two">
+                <figure>
+                    <img src="images/page-3/02_Camping Car/Group 108@2x.png">
+                    <figcaption>
+                        <h1 style="font-weight: 400;">US Camper Tour</h1>
+                        <p>Camper is a good choice to travel in nature</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="item" data-hash="three">
+                <figure>
+                    <img src="images/page-3/03_Tracking/Group 106@2x.png">
+                    <figcaption>
+                        <h1 style="font-weight: 400;">Alps Trekking</h1>
+                        <p>Walk in an unbelivable scenery of Alps</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item" data-hash="four">
+                <figure>
+                    <img src="images/page-3/04_Festival/Group 106@2x.png">
+                    <figcaption>
+                        <h1 style="font-weight: 400;">Lolapalooza Music Festival</h1>
+                        <p>Dozens of artists performing in the city park all day, plus great local food</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item" data-hash="five">
+                <figure>
+                    <img src="images/page-3/05_Relaxing/Group 115@2x.png">
+                    <figcaption>
+                        <h1 style="font-weight: 400;">Rest Massage in Bali</h1>
+                        <p>Relaxing summer daytime massage in beach front</p>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </div>
 
@@ -152,69 +187,66 @@
         <div id="about-bg">
             <div id="about-header">
                 <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consequatur quod voluptatem aspernatur iure cum asperiores et excepturi accusamus, officia minus. Reiciendis eius, cupiditate suscipit possimus quos quasi quam modi.</p>
+                <p>Started travelling the world from inspiration by friends who like travelling. Luckily I live with the loved one who likes to travel too. I would like to give her more happiness and meaning through travel. There are still many unknown paths
+                    for us!</p>
                 <h2>14 PDF 365</h2>
             </div>
         </div>
         <img id="my-intro" src="images/page-4/Mask Group 3@2x.png">
     </div>
-    <div id="travel-with-kids">
 
-        <img id="kid-travel-deco" src="images/page-5/line@2x.png">
-
-        <div id="travel-header">
-            <h1>Travel With Kids</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, molestias. Ab repudiandae iste aperiam blanditiis in aliquid dicta amet adipisicing elit. Esse, molestias. Ab repudiandae iste aperiam blanditiis in aliquid dicta ametplaceat!</p>
-            <a href="#">FIND MORE</a>
-        </div>
-        <div id="travel-photos" class="owl-carousel owl-theme ">
-            <div class="item"><img src="/images/page-5/photo-1@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-2@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-3@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-4@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-5@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-6@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-7@2x.png"></div>
-            <div class="item"><img src="/images/page-5/photo-8@2x.png"></div>
-        </div>
-        <!-- <i class="fas fa-caret-left"></i>
-        <i class="fas fa-caret-right"></i> -->
-    </div>
-
-    <div id="contact">
-        <div id="contact-deco">
-            <img src="images/page-6/line@2x.png">
-        </div>
-        <div id="contact-header">
-            <h1>Contact</h1>
-            <p>I would love to share traveller's story around the world.<br/> Feel free to get in touch for more travel information.
-            </p>
-            <div id="social-media">
-                <a href="#"><i class="fab fa-2x fa-facebook"></i></a>
-                <a href="#"><i class="fas fa-2x fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+    <section class="cd-section">
+        <div id="travel-with-kids">
+            <div id="travel-header">
+                <img id="kid-travel-deco" src="images/page-5/line@2x.png">
+                <h1>Travel With Kids</h1>
+                <p>Many say how I travel with kids. Travel is an opportunity to see my kids more closely. <br>No phone, no screen. Just my family. <br/>And I have found my happiness to see their smiles and have the moments to keep for rest of my life. </p>
+                <a id="find-more" href="#">FIND MORE</a>
+            </div>
+            <div id="travel-photos" class="owl-carousel owl-theme ">
+                <div class="item"><img src="/images/page-5/photo-1@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-2@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-3@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-4@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-5@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-6@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-7@2x.png"></div>
+                <div class="item"><img src="/images/page-5/photo-8@2x.png"></div>
             </div>
         </div>
+    </section>
 
-        <div id="bottom-menu">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">ARTICLES</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+    <section class="cd-section">
+        <div id="contact">
+            <div id="contact-deco" style="background-image: url(./images/page-6/line@2x.png);">
+                <!-- <img src="images/page-6/line@2x.png"> -->
+            </div>
+            <div id="contact-header">
+                <h1>Contact</h1>
+                <p>I would love to share traveller's story around the world.<br/> Feel free to get in touch for more to hear about.
+                </p>
+                <div id="social-media">
+                    <a href="#"><i class="fab fa-3x fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-3x fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-3x fa-instagram"></i></a>
+                </div>
+            </div>
+            <div id="bottom-menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#">ARTICLES</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
 
-
-
-
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
     <script>
@@ -238,13 +270,17 @@
         // });
 
         const scroll = new SmoothScroll('#arrow-btn', {
-            speed: 1500
+            speed: 1000,
+            emitEvents: true
         });
+
+        let clickScroll = e => {
+            $('#arrow-btn').addClass('rotateOnClick')
+        }
+        document.addEventListener('scrollstart', clickScroll)
 
         $(document).ready(function() {
             $('#right-container').owlCarousel({
-                // animateOut: 'fadeOut',
-                // animateIn: 'flipInX',
                 nav: false,
                 dots: false,
                 items: 1,
@@ -254,42 +290,75 @@
                 stagePadding: 60,
                 URLhashListener: true,
                 autoplayHoverPause: true,
-                startPosition: 'URLHash'
+                startPosition: 'URLHash',
+                onTranslated: counter
             });
+
+            let owlCarousel = $('.owl-carousel');
             $('.owl-prev').click(() => {
-                $('.owl-carousel').trigger('prev.owl.carousel');
+                owlCarousel.trigger('prev.owl.carousel');
             });
             $('.owl-next').click(() => {
-                $('.owl-carousel').trigger('next.owl.carousel');
+                owlCarousel.trigger('next.owl.carousel');
             });
-            // $('.owl-dot').click(() => {
-            //     console.log($(this).index())
-            //     $('.owl-dots').trigger('to.owl.carousel', [$(this).index(), 300]);
-            // });
+            $('.owl-dot').click(() => {
+                console.log($(this).index());
+                $('.owl-dots').trigger('to.owl.carousel', [$(this).index(), 300]);
+            });
+
+            function counter(e) {
+                const index = e.item.index + 1;
+                const dots = $('.owl-dots');
+                dots.find('.owl-dot.active').removeClass('active');
+                dots.find('.owl-dot').eq(index - 1).addClass('active');
+                $('#pg-num').html(`0${index}`)
+            }
+
+            (function($) {
+                $.fn.visible = function(partial) {
+                    let $t = $(this),
+                        $w = $(window),
+                        viewTop = $w.scrollTop(),
+                        viewBottom = viewTop + $w.height(),
+                        _top = $t.offset().top,
+                        _bottom = _top + $t.height(),
+                        compareTop = _bottom,
+                        compareBottom = _top;
+
+                    return ((compareBottom - 200 <= viewBottom) && (compareTop + 200 >= viewTop));
+                };
+            })(jQuery);
+
+            const myIntro = $('#my-intro');
+            const contact = $('#contact');
+            const contactHead = $('#contact-header');
+
+            $(window).scroll(e => {
+                if (myIntro.visible(true)) {
+                    myIntro.addClass('animate')
+                }
+                if (contact.visible(true)) {
+                    contact.addClass('bg-animate')
+                }
+                if (contactHead.visible(true)) {
+                    contact.addClass('hd-animate')
+                }
+            })
 
             $('#travel-photos').owlCarousel({
                 loop: true,
                 margin: 0,
                 nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
                 dots: false,
-                stagePadding: 0,
+                mouseDrag: true,
                 items: 5,
-                navText: ["<i class='fas fa-caret-left'></i>",
-                    "<i class='fas fa-caret-right'></i>"
+                navText: ["<i class='fa fa-3x fa-chevron-left'></i>",
+                    "<i class='fa fa-3x fa-chevron-right'></i>"
                 ]
             });
-
-
         });
-
-        // var controller = new ScrollMagic.Controller();
-        // // create a scene
-        // new ScrollMagic.Scene({
-        //         duration: 100, // the scene should last for a scroll distance of 100px
-        //         offset: 50 // start this scene after scrolling for 50px
-        //     })
-        //     .setPin('#') // pins the element for the the scene's duration
-        //     .addTo(controller); // assign the scene to the controller
     </script>
 </body>
 

@@ -1,6 +1,6 @@
-# Airbnb Clone
+# Travel Post Website
 
-Travel front-end page. 
+Travel front-end page inspired by world travellers. Pure HTML & CSS webpage using SmoothScroll and OwlCarousel libraries. 
 
 -   <a href="https://youtu.be/ttOvKJREECs
     " target="_blank">Video Demo Link</a>

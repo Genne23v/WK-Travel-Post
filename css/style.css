@@ -61,7 +61,7 @@ body {
     position: absolute;
     width: 55%;
     left: 80px;
-    bottom: 45px;
+    bottom: 75px;
     margin: 0rem;
     border: 2px solid white;
     border-image: linear-gradient(15deg, white, transparent 20%)1;
@@ -440,7 +440,7 @@ p {
 
 @keyframes come-in {
     to {
-        transform: translateY(-670px);
+        transform: translateY(-690px);
         opacity: 1;
     }
 }
@@ -455,7 +455,7 @@ p {
 #kid-travel-deco {
     position: relative;
     display: block;
-    top: 215px;
+    top: 225px;
     width: 100%;
     /* left: 6%; */
     margin: 0 auto;
@@ -530,8 +530,9 @@ p {
 /* ---------------------------------------------- */
 
 #contact {
+    margin-top: 200px;
     position: relative;
-    height: 140vh;
+    height: 100vh;
     width: 100vw;
     background-image: url('/images/page-6/background@2x@2x.png');
     background-size: cover;
@@ -541,18 +542,19 @@ p {
 
 #contact-deco {
     width: 88vw;
-    height: 60%;
+    height: 70%;
     position: absolute;
-    bottom: 200px;
-    left: 6%;
+    bottom: 250px;
+    left: 5%;
     background-size: cover;
     /* align-self: center; */
 }
 
 #contact-header {
     position: relative;
-    bottom: 80%;
+    bottom: 72%;
     width: 100%;
+    /* color: rgb(177, 177, 177); */
     color: white;
     text-align: center;
 }
